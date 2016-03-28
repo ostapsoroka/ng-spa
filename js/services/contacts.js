@@ -1,7 +1,7 @@
 ﻿(function () {
     'use strict';
 
-	angular.module('app').factory('contacts', contacts);
+    angular.module('app').factory('contacts', contacts);
 
     contacts.$inject = ['$http'];
 
