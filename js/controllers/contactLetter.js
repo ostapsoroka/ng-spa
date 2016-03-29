@@ -3,7 +3,7 @@
 
     angular.module('app').controller('contactLetter', contactLetter);
 
-    contactLetter.$inject = ['$scope', '$stateParams', 'contacts', 'delay'];
+    contactLetter.$inject = ['$scope', '$stateParams', 'contacts'];
 
     function contactLetter($scope, $stateParams, contacts) {
 
