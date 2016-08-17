@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles/app.css" />
 </head>
 <body ng-app="app">
-
+    <spinner></spinner>
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="js/app.js"></script>
@@ -17,5 +17,11 @@
     <script src="js/controllers/contactList.js"></script>
     <script src="js/controllers/contactLetter.js"></script>
     <script src="js/controllers/editContact.js"></script>
+    <pre id="uiRouterInfo">
+      $state = {{$state.current.name}}
+      $stateParams = {{$stateParams}}
+      $state full url = {{ $state.$current.url.source }}    
+</pre>
+<div id='content' -ui-view></div>
 </body>
 </html>

@@ -1,1 +1,9 @@
-﻿
+﻿<section>
+    <h1>Contacts</h1>
+    <ul class="contacts">
+    <li ng-repeat="letter in contactList">
+        <a title="Names beginning {{ letter}}" ui-sref="contactLetter({letter: letter.toLowerCase()})">{{letter}} 
+            </a>
+        </li>
+     </ul>
+</section>

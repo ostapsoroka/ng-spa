@@ -1,1 +1,16 @@
-﻿
+﻿<h1>{{initial}}</h1>
+<article ng-repeat="contact in letterContacts" class="contact">
+  <div ng-hide="hide{{contact.name}}">
+    <h1>{{contact.name}}</h1>
+    <a class="edit-link" title="Edit contact" ui-sref="contactLetter.editContact({name: contact.name})"> Edit</a>
+    <ul>
+       <li ng-repeat="telNum in contact.tel">
+           <span ng-repeat="(key, value) in telNum"
+            <span class="{{key}}"> {{value}}></span>
+       </li> 
+       <li class="address">{{contact.address}}</li>
+       <li class="email">{{contact.email}}</li>
+    </ul>
+  </div>
+    <div ui-view></div>
+</article>

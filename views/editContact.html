@@ -1,1 +1,14 @@
-﻿
+﻿<form ng-show="edit{{ contact.name }}">
+    <h1><input value="{{ contact.name }}" /></h1>
+    <ul>
+        <li ng-repeat="telNum in contact.tel">
+            <span ng-repeat="(key, value) in telNum">
+                <span class="{{key}}">
+                    <input value="{{value}}" />
+                </span>
+            </span>
+        </li>
+        <li class="address"><input value="{{contact.address}}" /></li>
+        <li class="email"><input value="{{contact.email}}" /></li>
+    </ul>
+</form>
